@@ -1,0 +1,422 @@
+/*General Styles*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: 'Lato', sans-serif;
+}
+
+ul,
+
+nav {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	opacity: 0.75;
+	color: #fff;
+}
+
+a:hover {
+	opacity: 1;
+}
+
+
+a.btn {
+	text-decoration: none;
+	color: black;
+	background: rgb(255, 255, 255);
+	padding: 15px 40px;
+	border-radius: 4px;
+	font-weight: bold;
+	text-transform: uppercase;
+	transition: all 0.2s ease-in-out;
+  }
+  
+  .glow-button:hover {
+	color: black;
+	box-shadow: 0 5px 15px rgba(255, 255, 255, 0.616);
+  }
+
+section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 100px 80px;
+}
+
+.grid {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+hr {
+	width: 500px;
+	height: 3px;
+	background-color: #3f51b5;
+	border: 0;
+	margin-bottom: 50px;
+}
+
+section h3.title {
+	text-transform: capitalize;
+	font: bold 32px "Open Sans", sans-serif;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+section p {
+	max-width: 775px;
+	line-height: 2;
+	padding: 0 20px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+@media (max-width: 800px) {
+	section {
+		padding: 50px 20px;
+	}
+}
+
+/*Header Styles*/
+
+header {
+	position: absolute;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 35px 100px 0;
+	animation: 1s fadein 0.5s forwards;
+	opacity: 0;
+	color: #fff;
+}
+
+header i {
+	opacity: 0.8;
+}
+
+@keyframes fadein {
+	100% {
+		opacity: 1;
+	}
+}
+
+header h2 {
+	font-family: "Quicksand", sans-serif;
+}
+
+header nav {
+	display: flex;
+	margin-right: -15px;
+}
+
+header nav li {
+	margin: 0 15px;
+}
+
+@media (max-width: 800px) {
+	header {
+		padding: 20px 50px;
+		flex-direction: column;
+	}
+
+	h2 {
+		padding-bottom: 15px;
+	}
+}
+
+/*Hero Styles*/
+
+.hero {
+	position: relative;
+	justify-content: center;
+	text-align: center;
+	min-height: 100vh;
+	color: #fff;
+}
+
+.hero .background-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	z-index: -1;
+	background-color: #80a3db;
+}
+
+.hero h1 {
+	font: bold 60px "Open Sans", sans-serif;
+	margin-bottom: 15px;
+}
+
+.hero h3 {
+	font: normal 28px "Open Sans", sans-serif;
+	margin-bottom: 40px;
+	}
+
+.hero a.btn {
+	padding: 20px 46px;
+}
+
+.hero-content-area {
+	opacity: 0;
+	margin-top: 100px;
+	animation: 1s slidefade 1s forwards;
+}
+
+@keyframes slidefade {
+	100% {
+		opacity: 1;
+		margin: 0;
+	}
+}
+
+/*Destinations Section*/
+
+.destinations .grid li {
+	height: 350px;
+	padding: 20px;
+	background-clip: content-box;
+	background-size: cover;
+	background-position: center;
+}
+
+.destinations .grid li.small {
+	flex-basis: 30%;
+	margin:0 auto;
+	width:450px;
+	transition: background-image 1s ease-in-out;
+}
+
+.destinations .grid li.large {
+	flex-basis: 70%;
+}
+
+.destinations {
+	background-color: #E5E8E8;
+}
+
+
+
+/*Packages Section*/
+.packages {
+	background-color: black;
+	color: white;
+}
+
+.packages .title {
+	font-family: 'Permanent Marker', cursive;
+	font-size: 50px;
+	margin-top: -50px;
+	margin-bottom: 50px;
+	background: -webkit-linear-gradient(rgb(255, 252, 52), rgb(231, 138, 138), rgb(138, 49, 165));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent
+}
+
+.packages .grid li h4 {
+	font-family: 'Permanent Marker', cursive;
+	background: -webkit-linear-gradient(rgb(255, 252, 52), rgb(231, 138, 138), rgb(138, 49, 165));
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent
+}
+.packages .grid li {
+	padding: 50px;
+	flex-basis: 50%;
+	text-align: center;
+}
+
+.packages .grid li i {
+	color: grey;
+	width: 150px;
+	height: 20px;
+}
+
+.packages .grid li h4 {
+	font-size: 30px;
+	margin: 25px 0;
+	color: white;
+}
+
+#wave {
+	background: black;
+	height: 100px;
+	width: 100%;
+}
+
+#astro:hover {
+	color: #E6A3E6;
+	transform: scale(1.2, 1.2);
+	transition-duration: 0.3s;
+}
+
+#camera:hover {
+	color: white;
+	transform: scale(1.2, 1.2);
+	transition-duration: 0.3s;
+}
+
+#satellite:hover {
+	color: #FDFF5B;
+	transform: scale(1.2, 1.2);
+	transition-duration: 0.3s;
+}
+
+#shuttle:hover {
+	color: #5DADE2;
+	transform: scale(1.2, 1.2);
+	transition-duration: 0.3s;
+}
+
+/* Testimonials Section */
+
+.testimonials .quote {
+font-size: 22px;
+font-weight: 300px;
+line-height: 1.5;
+margin: 40px 0 25px;
+}
+
+.testimonials .author {
+	font-style: italic;
+}
+
+.testimonials h3 {
+	color: #555;
+}
+
+#heart {
+	color: #e23434;
+}
+
+
+@media (max-width: 800px) {
+	#InputE {
+		margin-left: 29px;
+		width: 242px;
+	}
+}
+
+/*Contact Section*/
+.contact form {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 60%;
+	background-color: rgba(201, 195, 195, 0.651);
+}
+
+.contact p {
+font-size: 20px;
+}
+
+#mail {
+	margin: 25px;
+}
+
+/*BTN decoration*/
+
+.contact form .btn {
+	padding: 18px 20px;
+	background-color: #e23434;
+	border: none;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 20px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 5px;
+	height: 57px;
+	margin-right: 30px;
+  }
+  
+  .btn span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+  }
+  
+  .btn span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+  }
+  
+  .btn:hover span {
+	padding-right: 25px;
+  }
+  
+  .btn:hover span:after {
+	opacity: 1;
+	right: 0;
+  }
+
+.contact form input {
+	padding: 15px;
+	margin-right: 30px;
+	font-size: 18px;
+	color: #555;
+	flex: 1;
+}
+
+/*Footer Section*/
+ 
+footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: black;
+	color: white;
+	height: 100px;
+	width: 100%;
+}
+
+footer ul {
+display: flex;
+justify-content: flex-end;
+margin-right: 100px;
+}
+
+footer ul li {
+	padding: 5px;
+}
+
+footer p {
+	font-size: 25px;
+	opacity: 0.8;
+	display: block;
+    margin-left: 100px;
+}
+
+#twitter {
+	color: #1DA1F2;
+	opacity: 1;
+}
+
+#twitter:hover {
+	transform: scale(1.2, 1.2);
+	transition-duration: 0.3s;
+}
+
+#instagram:hover {
+	transform: scale(1.2, 1.2);
+	transition-duration: 0.3s;
+}
+
+
